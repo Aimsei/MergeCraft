@@ -1,0 +1,13 @@
+{
+  "itemGroup.mergecraft": "Example Mod Tab",
+  "block.mergecraft.example_block": "Example Block",
+  "item.mergecraft.example_item": "Example Item",
+
+  "mergecraft.configuration.title": "MergeCraft Configs",
+  "mergecraft.configuration.section.mergecraft.common.toml": "MergeCraft Configs",
+  "mergecraft.configuration.section.mergecraft.common.toml.title": "MergeCraft Configs",
+  "mergecraft.configuration.items": "Item List",
+  "mergecraft.configuration.logDirtBlock": "Log Dirt Block",
+  "mergecraft.configuration.magicNumberIntroduction": "Magic Number Text",
+  "mergecraft.configuration.magicNumber": "Magic Number"
+}
