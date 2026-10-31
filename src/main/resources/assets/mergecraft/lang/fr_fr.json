@@ -1,0 +1,20 @@
+{
+  "item.mergecraft.merging_wand": "Baguette de Merge",
+  "creativetab.mergecraft.items": "Objets MergeCraft",
+  "tooltip.mergecraft.merging_wand.usage": "Clic droit sur un mob pour le sélectionner (3 mobs identiques de même niveau fusionnent en un mob de niveau +1).",
+  "tooltip.mergecraft.merging_wand.durability": "Durabilité : %s/%s",
+  "message.mergecraft.selected": "Mob sélectionné (%s/3)",
+  "message.mergecraft.already_selected": "Ce mob est déjà sélectionné.",
+  "message.mergecraft.not_mergeable": "Cette entité ne peut pas être fusionnée.",
+  "message.mergecraft.selection_expired": "Sélection expirée.",
+  "message.mergecraft.fusion_started": "Fusion en cours...",
+  "message.mergecraft.fusion_success": "Fusion réussie ! Mob de niveau %s créé.",
+  "message.mergecraft.fusion_fail_mismatch": "Fusion échouée : les 3 mobs doivent être identiques (même type et même niveau).",
+  "message.mergecraft.fusion_fail_max": "Fusion échouée : niveau de merge maximum atteint.",
+  "render.mergecraft.merge_level": "Nv.%s",
+  "mergecraft.configuration.selectionDurationSeconds": "Durée de sélection (s)",
+  "mergecraft.configuration.wandDurability": "Durabilité de la baguette",
+  "mergecraft.configuration.maxMergeLevel": "Niveau de merge max",
+  "mergecraft.configuration.healthMultiplierPerLevel": "Multiplicateur de PV / niveau",
+  "mergecraft.configuration.fusionAnimationTicks": "Animation de fusion (ticks)"
+}

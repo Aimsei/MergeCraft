@@ -1,36 +1,29 @@
 package fr.aimsei.mergecraft;
 
-import java.util.List;
-
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
-// An example config class. This is not required, but it's a good idea to have one to keep your config organized.
-// Demonstrates how to use Neo's config APIs
 public class Config {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
-    public static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
-            .comment("Whether to log the dirt block on common setup")
-            .define("logDirtBlock", true);
+    public static final ModConfigSpec.IntValue SELECTION_DURATION_SECONDS = BUILDER
+            .comment("Durée de persistance d'une sélection de mob (en secondes)")
+            .defineInRange("selectionDurationSeconds", 5, 1, 600);
 
-    public static final ModConfigSpec.IntValue MAGIC_NUMBER = BUILDER
-            .comment("A magic number")
-            .defineInRange("magicNumber", 42, 0, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue WAND_DURABILITY = BUILDER
+            .comment("Nombre d'utilisations de la Baguette de Merge (1 par sélection)")
+            .defineInRange("wandDurability", 30, 1, 100000);
 
-    public static final ModConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
-            .comment("What you want the introduction message to be for the magic number")
-            .define("magicNumberIntroduction", "The magic number is... ");
+    public static final ModConfigSpec.IntValue MAX_MERGE_LEVEL = BUILDER
+            .comment("Niveau de merge maximum atteignable")
+            .defineInRange("maxMergeLevel", 10, 1, 100);
 
-    // a list of strings that are treated as resource locations for items
-    public static final ModConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
-            .comment("A list of items to log on common setup.")
-            .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), () -> "", Config::validateItemName);
+    public static final ModConfigSpec.DoubleValue HEALTH_MULTIPLIER_PER_LEVEL = BUILDER
+            .comment("Multiplicateur de PV max par niveau au-delà du niveau 1 (ex: 2.0 = PV x2 par niveau)")
+            .defineInRange("healthMultiplierPerLevel", 2.0, 1.0, 1000.0);
 
-    static final ModConfigSpec SPEC = BUILDER.build();
+    public static final ModConfigSpec.IntValue FUSION_ANIMATION_TICKS = BUILDER
+            .comment("Durée de l'animation de fusion (en ticks)")
+            .defineInRange("fusionAnimationTicks", 30, 1, 600);
 
-    private static boolean validateItemName(final Object obj) {
-        return obj instanceof String itemName && BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse(itemName));
-    }
+    public static final ModConfigSpec SPEC = BUILDER.build();
 }

@@ -46,7 +46,7 @@ authors="Aimsei"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+MergeCraft : une Baguette de Merge permet de fusionner 3 mobs vanilla identiques (meme type et meme niveau) en un mob de niveau superieur, avec PV multiplies et butin evolutif.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
