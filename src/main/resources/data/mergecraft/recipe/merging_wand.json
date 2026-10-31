@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:stick" },
+    { "item": "minecraft:diamond" },
+    { "item": "minecraft:redstone" }
+  ],
+  "result": {
+    "id": "mergecraft:merging_wand",
+    "count": 1
+  }
+}

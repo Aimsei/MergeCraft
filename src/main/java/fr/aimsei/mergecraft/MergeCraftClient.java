@@ -1,4 +1,4 @@
-package fr.aimsei;
+package fr.aimsei.mergecraft;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
