@@ -1,16 +1,20 @@
 {
-  "itemGroup.mergecraft": "Example Mod Tab",
-
-  "mergecraft.configuration.title": "MergeCraft Configs",
-  "mergecraft.configuration.section.mergecraft.common.toml": "MergeCraft Configs",
-  "mergecraft.configuration.section.mergecraft.common.toml.title": "MergeCraft Configs",
-  "mergecraft.configuration.items": "Item List",
-  "mergecraft.configuration.logDirtBlock": "Log Dirt Block",
-  "mergecraft.configuration.magicNumberIntroduction": "Magic Number Text",
-  "mergecraft.configuration.magicNumber": "Magic Number",
-
-
   "item.mergecraft.merging_wand": "Merging Wand",
-
-  "creativetab.mergecraft.items": "MergeCraft Items"
+  "creativetab.mergecraft.items": "MergeCraft Items",
+  "tooltip.mergecraft.merging_wand.usage": "Right-click a mob to select it (3 identical mobs of the same level merge into one of level +1).",
+  "tooltip.mergecraft.merging_wand.durability": "Durability: %s/%s",
+  "message.mergecraft.selected": "Mob selected (%s/3)",
+  "message.mergecraft.already_selected": "This mob is already selected.",
+  "message.mergecraft.not_mergeable": "This entity cannot be merged.",
+  "message.mergecraft.selection_expired": "Selection expired.",
+  "message.mergecraft.fusion_started": "Fusion started...",
+  "message.mergecraft.fusion_success": "Fusion complete! Level %s mob created.",
+  "message.mergecraft.fusion_fail_mismatch": "Fusion failed: the 3 mobs must be identical (same type and level).",
+  "message.mergecraft.fusion_fail_max": "Fusion failed: maximum merge level reached.",
+  "render.mergecraft.merge_level": "Lv.%s",
+  "mergecraft.configuration.selectionDurationSeconds": "Selection Duration (s)",
+  "mergecraft.configuration.wandDurability": "Wand Durability",
+  "mergecraft.configuration.maxMergeLevel": "Max Merge Level",
+  "mergecraft.configuration.healthMultiplierPerLevel": "Health Multiplier / Level",
+  "mergecraft.configuration.fusionAnimationTicks": "Fusion Animation (ticks)"
 }
